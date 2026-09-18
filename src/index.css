@@ -1,0 +1,72 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #FAF9F7;
+    --text-primary: #191919;
+    --text-muted: #6B6B68;
+    --accent-clay: #CC785C;
+    --accent-clay-dark: #B5654A;
+    --accent-clay-light: #F7ECE8;
+    --border-warm: #E8E5DF;
+    --card-bg: #FFFFFF;
+    --card-subtle: #F4F2ED;
+  }
+
+  body {
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    line-height: 1.6;
+    letter-spacing: -0.01em;
+  }
+
+  h1, h2, h3, h4, .font-serif-heading {
+    font-family: 'Newsreader', Georgia, Cambria, "Times New Roman", Times, serif;
+    letter-spacing: -0.025em;
+  }
+}
+
+/* Custom Utilities */
+.font-serif-heading {
+  font-family: 'Newsreader', Georgia, Cambria, serif;
+}
+
+.font-sans-body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* Subtle fade in animations */
+@keyframes fadeInRise {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-rise {
+  animation: fadeInRise 0.5s ease-out forwards;
+}
+
+/* Custom scrollbar for data dense tables */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF9F7;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #E8E5DF;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #CC785C;
+}
