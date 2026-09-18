@@ -219,7 +219,7 @@ export default function App() {
                         PASSPORT NO
                       </div>
                       <div className="text-[11px] sm:text-xs font-bold text-[#102A43] tracking-wide uppercase leading-tight">
-                        12345678
+                        K1234567
                       </div>
                     </div>
 
